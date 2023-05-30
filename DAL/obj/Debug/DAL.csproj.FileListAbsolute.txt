@@ -1,0 +1,9 @@
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\DAL\bin\Debug\DAL.dll
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\DAL\bin\Debug\DAL.pdb
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\DAL\obj\Debug\DAL.dll
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\DAL\obj\Debug\DAL.pdb
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\DAL\bin\Debug\Domain.dll
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\DAL\bin\Debug\Domain.pdb
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\DAL\obj\Debug\DAL.csproj.CopyComplete
