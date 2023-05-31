@@ -1,4 +1,5 @@
-﻿using DAL.Contracts;
+﻿using BLL.BLLExceptions;
+using DAL.Contracts;
 using DAL.DALEXceptions;
 using DAL.Tools;
 using Domain;
@@ -30,7 +31,7 @@ namespace DAL.Repositories
 
         private string SelectOneStatement
         {
-            get => "SELECT ,  FROM [dbo].[Boletos] WHERE  = @";
+            get => "SELECT *  FROM [dbo].[Boletos] WHERE NumeroBoleto = @Numero";
         }
 
         private string SelectAllStatement
@@ -111,9 +112,41 @@ namespace DAL.Repositories
             }
         }
 
-        Boleto IGenericRepository<Boleto>.GetOne(Guid id)
+        Boleto IGenericRepository<Boleto>.GetOne(int num)
         {
-            throw new NotImplementedException();
+            Boleto boleto = new Turista();
+            using (var dr = SqlHelper.ExecuteReader(SelectOneStatement, System.Data.CommandType.Text, 
+                new SqlParameter[] { new SqlParameter("@Numero", num) })) 
+            {
+                if(!dr.HasRows)
+                {
+                    throw new BoletoNoExisteException();
+                }
+                while (dr.Read())
+                {
+                    if ((int)dr["TipoBoleto_ID"] == (int)TipoBoleto.tipos.Turista)
+                    {
+                        boleto = new Turista((int)dr["NumeroBoleto"]);
+                        boleto.FechaEmision = (DateTime)dr["FechaEmision"];
+                        boleto.FechaSalida = (DateTime)dr["FechaSalida"];
+                        boleto.TipoBoletoID = (int)dr["TipoBoleto_ID"];
+                        boleto.TiempoEnDias = (int)dr["TiempoEnDias"];
+                        return boleto;
+                    }
+                    if ((int)dr["TipoBoleto_ID"] == (int)TipoBoleto.tipos.Ejecutivo)
+                    {
+                        boleto = new Ejecutivo((int)dr["NumeroBoleto"]);
+                        boleto.FechaEmision = (DateTime)dr["FechaEmision"];
+                        boleto.FechaSalida = (DateTime)dr["FechaSalida"];
+                        boleto.TipoBoletoID = (int)dr["TipoBoleto_ID"];
+                        boleto.TiempoEnDias = (int)dr["TiempoEnDias"];
+                        return boleto;
+                    }
+                }
+               
+                return boleto;
+            }
+            
         }
     }
 }

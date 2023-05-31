@@ -12,7 +12,7 @@ namespace DAL.Contracts
         void Update (Guid id,T obj);
         void Delete (Guid id);
         List<T> GetAll ();
-        T GetOne (Guid id);
+        T GetOne (int num);
 
     }
 }

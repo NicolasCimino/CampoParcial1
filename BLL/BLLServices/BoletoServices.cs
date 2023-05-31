@@ -44,15 +44,17 @@ namespace BLL.BLLServices
 
 				throw ex;
 			}
-			
 		}
 
 		public List<Boleto> ListarTodos() 
 		{
- 
 			return boletoRepository.GetAll();
-
         }
+
+		public Boleto GetBoleto(int id) 
+		{
+			return boletoRepository.GetOne(id);
+		}
 	}
 
 }

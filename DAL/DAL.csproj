@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Contracts\IGenericRepository.cs" />
     <Compile Include="Contracts\IGetAllRepository.cs" />
+    <Compile Include="DALEXceptions\BoletoNoExisteException.cs" />
     <Compile Include="DALEXceptions\ErrorConexionDBException.cs" />
     <Compile Include="Factory\Factory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

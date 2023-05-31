@@ -5,7 +5,6 @@ C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\bin\Debug\Domain.dll
 C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\bin\Debug\Domain.pdb
 C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\obj\Debug\UI.csproj.AssemblyReference.cache
 C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\obj\Debug\UI.csproj.SuggestedBindingRedirects.cache
-C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\obj\Debug\UI.Form1.resources
 C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\obj\Debug\UI.Properties.Resources.resources
 C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\obj\Debug\UI.csproj.GenerateResource.cache
 C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
@@ -16,3 +15,5 @@ C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\bin\Debug\BLL.dll
 C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\bin\Debug\DAL.dll
 C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\bin\Debug\BLL.pdb
 C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\bin\Debug\DAL.pdb
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\obj\Debug\UI.HomeForm.resources
+C:\Users\nico_\OneDrive\Desktop\Campo\Parcial1Campo\UI\obj\Debug\UI.EditBoletoForm.resources
